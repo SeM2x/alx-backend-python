@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+"""module that defines wait_random function"""
 import asyncio
 from random import random
-"""module that defines wait_random function"""
 
 
 async def wait_random(max_delay=10):
