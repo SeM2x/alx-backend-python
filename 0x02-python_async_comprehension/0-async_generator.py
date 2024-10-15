@@ -5,7 +5,7 @@ import random
 import typing
 
 
-async def async_generator() -> typing.AsyncGenerator[float, None]:
+async def async_generator() -> typing.Generator[float, None, None]:
     """coroutine that yields random numbers"""
     for _ in range(10):
         await asyncio.sleep(1)
