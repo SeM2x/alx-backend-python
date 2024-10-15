@@ -5,8 +5,8 @@ import random
 import typing
 
 
-async def async_generator() -> typing.AsyncGenerator[float, None]:
+async def async_generator() -> typing.AsyncGenerator[float]:
     """coroutine that yields random numbers"""
-    for i in range(10):
+    for _ in range(10):
         await asyncio.sleep(1)
         yield random.random() * 10
